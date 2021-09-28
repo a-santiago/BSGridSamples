@@ -64,11 +64,26 @@
     <main class="flex-shrink-0">
         <div class="container">
             <h1 class="mt-5">Grid Five</h1>
-            <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and
-                CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
+            <!-- Container with all Columns inside -->
+            <div class="row row-cols-md-3 gy-1 minHeight">
+                <!-- Column Left -->
+                <div class="col col-xl-3">
+                    <div class="col border rounded-3 ps-2 bg-secondary h-100">Left Column</div>
+                </div>
+                <!-- Column Middle -->
+                <div class="col-md col-xl-6">
+                    <div class="col h-100 border rounded-3 ps-2 bg-secondary">Middle Column</div>
+                </div>
+                <!-- Column Right -->
+                <div class="col col-xl-3">
+                    <div class="col border rounded-3 ps-2 bg-secondary h-100">
+                        Right Column
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="footer mt-auto py-3 bg-light sticky-footer">
+    <footer class="footer mt-auto py-3 bg-dark sticky-footer border-top">
         <div class="container-fluid text-center">
             <span class="text-muted">&copy; Abdiel Santiago 2021</span>
         </div>
