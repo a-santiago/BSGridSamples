@@ -9,3 +9,29 @@
      bottom: 0;
      width: 100%;
  }
+
+ .minHeight{
+     min-height: 65vh;
+ }
+
+ .heroText {
+     /* font-family: modesto-open-shadow, sans-serif; */
+     font-family: 'Gemunu Libre', sans-serif;
+     font-weight: 700;
+     font-style: normal;
+     text-transform: uppercase;
+     color: rgb(255, 255, 0);
+ }
+
+ .bgImage {
+     background-image: url("/img/MicrosoftTeams-image.png");
+     background-repeat: none;
+     background-position: center;
+     background-size: cover;
+     background-attachment: fixed;
+ }
+
+ .pageText{
+     font-family: 'Roboto', sans-serif;
+
+ }
