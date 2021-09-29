@@ -62,10 +62,20 @@
     </nav>
 
     <main class="flex-shrink-0">
-        <div class="container">
-            <h1 class="mt-5">Grid Six</h1>
-            <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and
-                CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
+        <div class="container minHeight h-100">
+            <h1 class="">Grid Six</h1>
+            <div class="row row-cols-1 gy-2 minHeight">
+                <div class="col border col-md-12 bg-secondary rounded-3">
+                    <div class="col">Column One</div>
+                </div>
+                <div class="col border h-100 col-md-6 order-md-last bg-secondary rounded-3">
+                    <div class="col">Column Three</div>
+                </div>
+                <div class="col border h-100 col-md-6 bg-muted rounded-3">
+                    <div class="col">Column Two - But Ordered Last</div>
+                </div>
+
+            </div>
         </div>
     </main>
     <footer class="footer mt-auto py-3 bg-light sticky-footer">

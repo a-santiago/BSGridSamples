@@ -62,13 +62,28 @@
     </nav>
 
     <main class="flex-shrink-0">
-        <div class="container">
-            <h1 class="mt-5">Grid Nine</h1>
-            <p class="lead">Pin a footer to the bottom of the viewport in desktop browsers with this custom HTML and
-                CSS. A fixed navbar has been added with padding-top: 60px; on the main > .container.</p>
+        <div class="mt-5 container-fluid minHeight h-100">
+            <h1>Grid Nine</h1>
+            <div class="row row-cols-1 gy-2 minHeight">
+                <div class="col border col-md-12 bg-secondary rounded-3 d-flex flex-column">
+                    <div class="col order-last">Main Column</div>
+                </div>
+                <div class="col-6 border col-md-3 order-md-last bg-secondary rounded-3">
+                    <div class="col ps-2 d-flex flex-column">Column One</div>
+                </div>
+                <div class="col-6 border col-md-3 bg-secondary rounded-3">
+                    <div class="col ps-2 d-flex flex-column">Column Two</div>
+                </div>
+                <div class="col-6 border col-md-3 bg-secondary rounded-3">
+                    <div class="col">Column Three</div>
+                </div>
+                <div class="col-6 border col-md-3 bg-muted rounded-3">
+                    <div class="col">Column Four</div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer class="footer mt-auto py-3 bg-dark sticky-footer">
+    <footer class="footer mt-auto py-3 bg-dark sticky-footer border-top">
         <div class="container-fluid text-center">
             <span class="text-muted">&copy; Abdiel Santiago 2021</span>
         </div>
